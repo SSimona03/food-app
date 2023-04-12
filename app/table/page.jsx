@@ -1,7 +1,7 @@
  'use client'
 
 import "../globals.css"
-import {useTrackStatus} from "../categories/logic.jsx"
+import {useTrackStatus} from "../../components/LogicButtons.jsx"
 
 
 const tableContent = [

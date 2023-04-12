@@ -5,11 +5,11 @@ import { Montserrat } from "next/font/google"
 import Link from 'next/link'
 import Image from 'next/image'
 import logo from "../public/foodLogo.png"
-import Categories from "./categories/page.jsx"
-import Login from "./login/page.jsx"
-import Search from "./search/page.jsx"
-import Footer from "./footer/page.jsx"
-import Logic from "./categories/logic.jsx"
+import Categories from "../components/Buttons.jsx"
+import Login from "../components/Login.jsx"
+import Search from "../components/Search.jsx"
+import Footer from "../components/Footer.jsx"
+import Logic from "../components/LogicButtons.jsx"
 
 
 

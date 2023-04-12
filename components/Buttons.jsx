@@ -1,8 +1,7 @@
 'use client'
 import React from "react"
-import '../globals.css'
-import {useUpdate, useTrackStatus} from "./logic"
-
+import '../app/globals.css'
+import {useUpdate, useTrackStatus} from "./LogicButtons"
 
 export default function Categories(clickStatus){
    
