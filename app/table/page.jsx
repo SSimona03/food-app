@@ -50,7 +50,7 @@ const tableContent = [
 
                 {/* <th className ={`text-sm md:text-base text-right transition-all duration-200 ${ show[1] ? ' opacity-100' : 'opacity-0 hidden' }`}> Low FODMAP </th> */}
 
-              { show[1] ==true ?  null : <th className = "text-sm md:text-base text-right anime "> Low FODMAP </th> } 
+              { show[1] ==true ?  null : <th className = "text-sm md:text-base text-right "> Low FODMAP </th> } 
               { show[2] ==true ?  null : <th className="text-sm md:text-base text-right " > High PH </th> }
               { show[3] ==true ?  null : <th className="text-sm md:text-base text-right " > Low Fat </th> }
               
@@ -66,7 +66,7 @@ const tableContent = [
 {/* 
           <td className={`p-2 text-right text-sm md:text-base text-gray-700 transition-all duration-200  ${ show[1] ? 'opacity-100' : 'opacity-0 hidden' }`}>{val.group1}</td>  */}
 
-          { show[1] == true ? null  : <td className="p-2 text-right text-sm md:text-base text-gray-700 anime"  >{val.group1}</td> }
+          { show[1] == true ? null  : <td className="p-2 text-right text-sm md:text-base text-gray-700 "  >{val.group1}</td> }
           { show[2] == true ? null : <td className=" p-2 text-right text-sm md:text-base text-gray-700 ">{val.group2}</td> }
           { show[3] == true ? null : <td className=" p-2 text-right text-sm md:text-base text-gray-700 ">{val.group3}</td> }
           </tr> 
