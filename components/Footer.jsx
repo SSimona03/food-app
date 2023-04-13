@@ -1,8 +1,7 @@
-import '../globals.css'
+import '../app/globals.css'
 import Link from 'next/link'
-import { Error } from '../error';
-import Info from '../info/page'
-import FAQ from '../faq/page'
+import { Error } from '../app/error';
+
 
 export default function Footer(){
     return(

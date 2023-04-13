@@ -170,10 +170,10 @@ thead tr:first-child {
   background: white;
   margin: 0;
 }
-.anime{
+/* .anime{
   transition: linear;
   animation: fade-in 1s;
-}
+} */
 
 .animeAfter{
   transition: linear;
