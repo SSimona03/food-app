@@ -1,22 +1,23 @@
 'use client'
 import React from "react"
 import '../app/globals.css'
-import {useUpdate, useTrackStatus} from "./LogicButtons"
+import {useContextShare, ACTIONS}  from "./Logic"
 
-export default function Categories(clickStatus){
+
+export default function Buttons(){
    
-    const update = useUpdate();
-    const track = useTrackStatus();
+    const getContext = useContextShare();
+    //console.log(getContext.stateObj.btnOne)
 
     const styles = {
         one : {
-            backgroundColor: track[1] ? '#5F8D4E' : '#1D660F'
+            backgroundColor: getContext.stateObj.btnOne ? '#5F8D4E' : '#1D660F'
         },
         two :{
-            backgroundColor: track[2] ? '#5F8D4E' : '#1D660F'
+            backgroundColor: getContext.stateObj.btnTwo ? '#5F8D4E' : '#1D660F'
         },
         three:{
-            backgroundColor: track[3] ? '#5F8D4E' : '#1D660F'
+            backgroundColor: getContext.stateObj.btnThree ? '#5F8D4E' : '#1D660F'
         }
        
     }
@@ -25,16 +26,16 @@ export default function Categories(clickStatus){
         <div className="container-nav">
             <div className=" mobile-menu ">Choose any</div>
 
-            <div className=" mobile-nav" >
+            <div className=" mobile-nav" > {/* each btn style */}
 
                 <button className="item " type="button" style={styles["one"]}
-                 onClick={ ()=> update(1) }
+                 onClick={ ()=> getContext.dispatchObj({type:ACTIONS.BTN_ONE}) }
                 >Low FODMAP</button>
                 <button className="item " type="button" style={styles["two"]}
-                 onClick={ ()=> update(2)}
+                 onClick={ ()=> getContext.dispatchObj({type:ACTIONS.BTN_TWO})}
                 >High PH</button>
                 <button className="item " type="button" style={styles["three"]}
-                 onClick={ ()=> update(3)}
+                 onClick={ ()=> getContext.dispatchObj({type:ACTIONS.BTN_THREE})}
                 >Low Fat</button>
             </div>
             

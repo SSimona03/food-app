@@ -3,8 +3,9 @@ import Link from 'next/link'
 
 
 export default function Info(){
+    
     return(
-    <div className="">
+    <div className="pt-20">
             <Link className="btn-back text-sm " href="/"> &larr; </Link>
 
         <div className="flex flex-col mt-20 leading-7 w-2/3 mx-auto ">

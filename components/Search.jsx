@@ -1,30 +1,33 @@
 'use client'
 
 
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
+import {useContextShare, ACTIONS}  from "./Logic"
+import useDebounce from "../hooks/useDebounce"
 
 
+export default function Search() { 
 
+  const [inputValue, setInputValue] = useState('');
+  const updateContextShare = useContextShare();
+  const debouncedKeyword = useDebounce(inputValue, 1500);
 
-export default function Searchbar({keyword}) { //onChange
-  const [itemSearched, setItemSearched] = useState('')
-
-
-     function searchItem(e){
+    function searchItem(e){ 
       let lowerCase = e.target.value.toLowerCase();
-      setItemSearched(lowerCase)
-      }
-
-      console.log(itemSearched)
+      setInputValue(lowerCase);
+    }
+    
+    useEffect( () => {
+      updateContextShare.dispatchObj({ type:ACTIONS.SEARCH, payload: debouncedKeyword })
+    }, [debouncedKeyword])
 
     return (
         <input 
         className="search "
         key="search-bar"
-        value={keyword}
         placeholder={"search item"}
         onChange={searchItem}
       />
-    
+          
     );
   }
