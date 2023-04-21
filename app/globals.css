@@ -49,11 +49,16 @@ body{
 }
 
 
-/* Items */
+/* Items Btn */
 
 .container-nav .mobile-nav{
   display: none;
   flex-direction: column;
+}
+
+.container-nav{
+  display: flex;
+  justify-content: center;
 }
 
 .item{
@@ -71,11 +76,12 @@ body{
   background-color: var(--background-color);
   width: 100px;
   height: 36px;
-  color: white;
+  color: white; 
+  font-size: 11px;
 }
+
 .mobile-menu:hover, mobile-menu:active{
   cursor: pointer;
-  
 }
 
 .item{
@@ -88,17 +94,27 @@ body{
   
 }
 
-.container-nav:hover .mobile-nav{
+
+.container-nav:hover .mobile-nav {
   display: flex;
-  position: absolute;
+  position: absolute; 
+  padding: 35px;
   /* transform: translateY(-1em); */
 }
+
+
 .container-nav:hover > .mobile-menu{
   border-radius: 5px 5px 0 0;
+ 
 }
 .container-nav:hover .item:last-child {
   border-radius: 0 0 5px 5px;
 }
+
+.item:hover {
+  font-weight: 500;
+}
+
 
 .login{
   position: absolute;
@@ -133,13 +149,12 @@ body{
   padding: 0.3rem;
   border-radius: 5px;
   display: block;
-  margin: 3rem auto; 
+  margin: 3rem auto 3rem auto; 
   text-align: center;
   font-size: 14px;
 }
 
 .search:focus, .search:hover{
-
   cursor: pointer;
   outline: none;
   box-shadow: 1px 1px 5px #DDDDDD;
@@ -162,6 +177,7 @@ body{
 }
 .table-row:hover td{
   color: var(--background-color);
+  
 }
 
 thead tr:first-child {
@@ -259,10 +275,12 @@ thead tr:first-child {
 
   .container-nav:hover .mobile-nav{
     position: relative;
+    padding: 0px;
   }
 
   .container-nav .mobile-nav{
     display:flex;
+    position: relative;
     flex-direction: row;
     justify-content: space-between;
     width: 26rem;
@@ -275,6 +293,7 @@ thead tr:first-child {
   .mobile-menu{
     display: none;
   }
+
   .item{
     width: 120px;
     border-radius: 5px;
