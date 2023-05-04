@@ -6,9 +6,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import logo from "../public/foodLogo.png"
 import Buttons from "../components/Buttons.jsx"
-import Login from "../components/Login.jsx"
+import Login from "../server-components/Login.jsx"
 import Search from "../components/Search.jsx"
-import Footer from "../components/Footer.jsx"
+import Footer from "../server-components/Footer.jsx"
 import Logic from "../components/Logic.jsx"
 
 

@@ -1,7 +1,7 @@
  //'use client'
 
 
-import Table from './table/page.jsx'
+import Table from '../components/Table.jsx'
 import Search from '../components/Search.jsx'
 import Buttons from '../components/Buttons.jsx'
 

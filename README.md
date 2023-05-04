@@ -16,8 +16,7 @@ Install:
 Tailwind + tailwind config file
 autoprefixer
 postcss + postcss.config.file {
-    // postcss.config.js
-
+    // postcss.config.js:
 module.exports = {
     plugins: {
       tailwindcss: {},

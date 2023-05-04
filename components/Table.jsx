@@ -1,4 +1,4 @@
- 'use client'
+'use client'
 
 import "../globals.css"
 import {useContextShare, ACTIONS}  from "../../components/Logic"
@@ -73,4 +73,3 @@ export function searchInput(input){
     
  
 } 
-
