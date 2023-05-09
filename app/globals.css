@@ -170,14 +170,22 @@ body{
 .table-box{
   width: 95vw;
   margin-top: 20px;
-  /* border-collapse: separate; */
+
 }
+
+
+.result-icon > *{
+margin: 0 auto;
+}
+.result-icon-l > *{
+  float: right;
+}
+
 .table-head-box {
   color: var(--background-color);
 }
 .table-row:hover td{
   color: var(--background-color);
-  
 }
 
 thead tr:first-child {
@@ -212,6 +220,7 @@ thead tr:first-child {
     opacity: 0;
   }
 }
+
 
 /* Pages : Info ,  FAQ */
 
@@ -288,6 +297,7 @@ thead tr:first-child {
   }
   .table-box{
     width: 80vw;
+   
   }
 
   .mobile-menu{

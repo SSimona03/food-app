@@ -13,6 +13,7 @@ import Logic from "../components/Logic.jsx"
 
 
 
+
 const fontMontserrat = Montserrat({
   weight: ["400","500","600","700"],
   variable: ['--font-montserrat']
@@ -41,7 +42,7 @@ export default function RootLayout({ children }) {
                 
 
                       <div className="other-pages">
-                      {children}
+                        {children}
                       </div>
                 </Logic>    
             </div>
