@@ -16,15 +16,16 @@ Install:
 Tailwind + tailwind config file
 autoprefixer
 postcss + postcss.config.file {
-    // postcss.config.js
+    // postcss.config.js:
+      module.exports = {
+          plugins: {
+            tailwindcss: {},
+            autoprefixer: {},
+          },
+        };
+      }
 
-module.exports = {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
-  };
-}
+      
 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

@@ -16,6 +16,14 @@ export default function Info(){
                 <span className="font-bold">Low Fat</span> - is recommended for those who have issues with the gallbladder.
                 </p>
         </div>
+        <div className="mt-20 leading-7 w-2/3 mx-auto">
+            <p>
+                Under each column you will find a color dot. <br></br>
+                <b>Red</b> means it should not be consumned and <b>Green</b> means it can be consumed.<br></br>
+                <br></br>
+                For example, the item Apple under LowFODMAP has Red and it means you should not consume, but for HighPH it can because it has Green.
+            </p>
+        </div>
                 <div className="mx-auto w-5/6 info-disclaimer mb-6">
                     <span className="font-bold">Disclaimer</span> 
                     <p className="mt-1">
