@@ -10,7 +10,7 @@ export default function Search() {
 
   const [inputValue, setInputValue] = useState('');
   const updateContextShare = useContextShare();
-  const debouncedKeyword = useDebounce(inputValue, 1500);
+  const debouncedKeyword = useDebounce(inputValue, 1000);
 
     function searchItem(e){ 
       let lowerCase = e.target.value.toLowerCase();
