@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
                         <Link href="/">
                         <Image src={logo} width={120} max-height={100} alt="logo" className="object-contain logo absolute left-0 ml-2 " priority="true" ></Image>
                         </Link>
-                        <Login />
+               
                       </nav> 
                 
 
